@@ -1,0 +1,52 @@
+
+  {% extends 'layout.html' %}
+  {% block content %}
+<div class = 'row'> 
+<div id="map-canvas" class='col-md-8'></div>
+<div class='col-md-4'>
+  <div class='menu-box'>
+    <h2>Hotels</h2>
+    <select>
+    {% for hotel in hotels %}
+      <option>{{ hotel.name }}</option>
+    {% endfor %}
+    </select>
+    <h2>Restaurant</h2>
+    <select>
+    {% for restaurant in restaurants %}
+      <option>{{ restaurant.name }}</option>
+    {% endfor %}
+    </select>
+    <h2>Activities</h2>
+    <select>
+    {% for activity in activities %}
+      <option>{{ activity.name }}</option>
+    {% endfor %}
+    </select>
+  </div>
+  <div class="panel panel-default menu-box">
+    <div class="panel-heading">
+      <button class="btn btn-default" type="submit">1</button>
+      <button class="btn btn-default" type="submit">2</button>
+      <button class="btn btn-default" type="submit">3</button>
+      <button class="btn btn-default" type="submit">+</button>
+    </div>
+  <div class="panel-body">
+  <h2>My Hotel</h2>
+  <p>
+  {{hotels[0].name}}
+  </p>
+  <h2>My Restaurant</h2>
+  <p>
+  {{restaurants[0].name}}
+  </p>
+  <h2>My Activities</h2>
+  <p>
+  {{activities[0].name}}
+  </p>
+</div>
+  </div>
+ </div>
+ </div>
+{% endblock %}
+

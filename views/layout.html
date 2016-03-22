@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="/jquery/dist/jquery.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzuzMaHVRVtuCV_41h2-5vv7ExgHgsB0Y"></script>
+</head>
+<body>
+ <nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-map-marker"></span> TripPlanner</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li> 
+    </ul>
+  </div>
+</nav>
+{% block content %}{% endblock %}
+ <script src="/api/map.js"></script>
+</body>
+</html>

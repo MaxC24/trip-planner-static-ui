@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+div {
+  span {
+    color: green;
+  }
+}
+body {
+	background-color: #A8BDB9;
+}
+
+#map-canvas {
+	height: 100vh;
+	margin-let: 10px;
+}
+.navbar {
+	margin: 0px;
+}
+.menu-box {
+	background-color: #46A286;
+	border-radius: 2em;
+	margin: 1em 1em;
+	&::after, &::before {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	color: #566A64;
+}
+
+.col-md-4 {
+	padding-left: 0px;
+}
+
+select, p {
+	float: right;
+	margin: 1.5vh;
+	width: 80%;
+}
+
+h2 {
+	float: left;
+	margin-left: 2vw;
+}
+
+.btn-default {
+	border-radius: 50%;
+}
+.panel-heading {
+	border-radius: 2em;
+}
+
+.row {
+	padding-left: 10px;
+}
+
+
